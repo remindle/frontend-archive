@@ -1,0 +1,9 @@
+{
+  "name": "@remindle/auth",
+  "version": "1.0.0",
+  "description": "React microfrontend auth",
+  "main": "index.js",
+  "repository": "https://github.com/remindle/frontend/auth",
+  "author": "Leo van Haaren <leo@remindle.io>",
+  "license": "MIT"
+}
