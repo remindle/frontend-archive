@@ -1,9 +1,0 @@
-{
-  "name": "@remindle/dashboard",
-  "version": "1.0.0",
-  "description": "VueJS microfrontend dashboard",
-  "main": "index.js",
-  "repository": "https://github.com/remindle/frontend/dashboard",
-  "author": "Leo van Haaren <leo@remindle.io>",
-  "license": "MIT"
-}
