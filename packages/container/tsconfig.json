@@ -1,8 +1,19 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
+    "target": "es2020",
+    "module": "es2020",
+    "moduleResolution": "node",
     "strict": true,
-    "jsx": "react"
+    "jsx": "preserve",
+    "sourceMap": false,
+    "lib": ["es2020", "dom"],
+    "types": ["node", "vite/client", "cypress"],
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true, // https://gist.github.com/chrisgervang/59ed046c0a8d7c3a1be1b3416f8f2466
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "public", "tests"]
 }

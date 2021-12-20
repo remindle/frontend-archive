@@ -5,7 +5,8 @@
     "start": "lerna run --parallel start",
     "build": "lerna run build",
     "serve": "lerna run --parallel serve",
-    "clean": "lerna run --parallel clean"
+    "clean": "lerna run --parallel clean",
+    "stop": "kill-port --port 3000,8080,8081"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
