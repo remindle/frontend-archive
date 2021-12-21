@@ -9,7 +9,7 @@ const Button: React.FC<React.HTMLProps<HTMLButtonElement>> = ({
   ...props
 }) => (
   <button className={`r-btn ${className}`} {...props}>
-    {children}
+    <span>{children}</span>
   </button>
 );
 

@@ -20,7 +20,7 @@ function Page() {
       />
       <div className="container px-4 mx-auto">
         <div className="max-w-md mx-auto py-6 lg:py-8 px-4 lg:px-8 dark:bg-white dark:border rounded-xl text-center">
-          <span className="inline-block mb-8 text-xs text-primary font-semibold">
+          <span className="inline-block mb-8 text-xs text-secondary font-semibold">
             Sign In
           </span>
           <h3 className="mb-12 text-3xl font-semibold font-heading text-tetriary-light">

@@ -17,6 +17,10 @@
   transform-style: preserve-3d;
 }
 
+.r-btn > span {
+  padding: 0 24px;
+}
+
 .r-btn::after {
   content: " ";
   display: block;

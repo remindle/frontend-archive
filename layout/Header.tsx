@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { MoonIcon } from '../components/icons/Moon';
 import useDarkMode from '../hooks/useDarkMode';
@@ -7,6 +7,7 @@ import { PageContext } from '../renderer/types';
 
 function Header() {
   const [darkMode, toggleDarkMode] = useDarkMode();
+  const [state, setState] = useState(false);
 
   useEffect(() => {
     //
