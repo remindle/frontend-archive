@@ -1,30 +1,28 @@
-import React, { Suspense, useState } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
-import Home from './components/Home';
 import Login from './components/Login';
+import Register from './components/Register';
 import { MoonIcon } from './icons/Moon';
+import useDarkMode from './utils/useDarkMode';
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [darkMode, toggleDarkMode] = useDarkMode();
 
-  function toggleDarkMode() {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      localStorage.setItem("theme", "light");
-      document.documentElement.classList.remove("dark");
-    } else {
-      localStorage.setItem("theme", "dark");
-      document.documentElement.classList.add("dark");
-    }
-  }
+  useEffect(() => {
+    //
+  }, [darkMode]);
 
   return (
     <div className="flex flex-col min-h-screen text-center bg-white dark:bg-tetriary-dark">
-      <nav className="flex items-center justify-end h-16 px-4">
+      <nav className="flex items-center justify-between h-16 px-4">
+        <a href="#">
+          <img
+            src={`/src/logo_text${darkMode ? "_white" : ""}.svg`}
+            alt="remindle logo"
+            className="w-32"
+          />
+        </a>
         <button
           className="flex p-2 text-tetriary rounded hover:text-secondary dark:text-white focus:outline-none hover:bg-tetriary dark:hover:bg-gray-500 dark:hover:text-secondary"
           onClick={toggleDarkMode}
@@ -36,8 +34,8 @@ function App() {
         <Suspense fallback="Loading...">
           <Routes>
             <Route path="login" element={<Login />} />
-            <Route path="home" element={<Home />} />
-            <Route path="*" element={<Navigate to="home" />} />
+            <Route path="register" element={<Register />} />
+            <Route path="*" element={<Navigate to="login" />} />
           </Routes>
         </Suspense>
       </BrowserRouter>
