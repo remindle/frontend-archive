@@ -2,7 +2,7 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   darkMode: "class", // or 'media' or 'class'
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  content: ["./index.html", "./{marketing,auth,components,layout,renderer}/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     screens: {
       sm: '640px',

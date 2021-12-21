@@ -16,5 +16,11 @@
     "noEmit": true,
     "jsx": "react"
   },
-  "include": ["src"]
+  "include": ["src", "renderer/layout.test.tsx", "renderer/Layout.tsx", "utils", "icons", "components", "auth/pages/signup/Register.tsx"],
+"ts-node": {
+    "transpileOnly": true,
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
 }
