@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "npm run server",
     "prod": "npm run build && npm run server:prod",
-    "build": "vite build && vite build --ssr",
+    "build": "vite build",
+    "build:ssr": "vite build && vite build --ssr",
+    "prerender": "vite build && vite build --ssr && vite-plugin-ssr prerender",
     "server": "ts-node ./server",
-    "server:prod": "cross-env NODE_ENV=production ts-node ./server"
+    "server:prod": "cross-env NODE_ENV=production ts-node ./server",
+    "proxy": "ory proxy http://localhost:3000"
   },
   "repository": "https://github.com/remindle/frontend/container",
   "author": "Leo van Haaren <leo@remindle.io>",
@@ -23,9 +26,11 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "ts-node": "^10.4.0",
+    "urql": "^2.0.6",
     "vite-plugin-ssr": "^0.3.39"
   },
   "devDependencies": {
+    "@ory/cli": "^0.1.14",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.2",
