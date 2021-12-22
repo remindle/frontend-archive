@@ -37,16 +37,6 @@ function Page() {
                 Email address
               </span>
             </div>
-            <div className="relative flex flex-wrap mb-6">
-              <Input
-                className="relative mb-2 md:mb-0 w-full py-4 pl-4 text-sm border rounded"
-                type="password"
-                placeholder="********"
-              />
-              <span className="absolute top-0 left-0 ml-4 -mt-2 px-1 inline-block bg-white text-gray-500 text-xs">
-                Password
-              </span>
-            </div>
             <Button className="mb-8">Sign in</Button>
           </form>
           <p className="text-sm text-gray-500">
@@ -56,6 +46,15 @@ function Page() {
               href="/auth/register"
             >
               Sign up
+            </Link>
+            <br />
+            or
+            <br />
+            <Link
+              className="text-primary font-semibold hover:underline"
+              href="/auth/register"
+            >
+              Forgot password?
             </Link>
           </p>
         </div>

@@ -59,16 +59,6 @@ function Page() {
                 Email address
               </span>
             </div>
-            <div className="relative flex flex-wrap mb-6">
-              <Input
-                className="relative mb-2 md:mb-0 w-full py-4 pl-4 text-sm border rounded"
-                type="password"
-                placeholder="********"
-              />
-              <span className="absolute top-0 left-0 ml-4 -mt-2 px-1 inline-block bg-white text-gray-500 text-xs">
-                Password
-              </span>
-            </div>
             <label className="inline-flex mb-5 text-left">
               <input className="mr-2" type="checkbox" name="terms" value="1" />
               <span className="-mt-1 inline-block text-sm text-gray-500">
