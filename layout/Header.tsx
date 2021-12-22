@@ -17,7 +17,7 @@ function Header() {
     <nav className="flex items-center justify-between h-16 px-4">
       <a href="#">
         <img
-          src={`/assets/logo_text${darkMode ? "_white" : ""}.svg`}
+          src={`/logo_text${darkMode ? "_white" : ""}.svg`}
           alt="remindle logo"
           className="w-32"
         />

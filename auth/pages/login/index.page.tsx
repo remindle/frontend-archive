@@ -10,12 +10,12 @@ function Page() {
     <section>
       <img
         className="hidden lg:block absolute bottom-0 left-0 mb-32 w-1/5"
-        src="/assets/backgrounds/primary-circle-fade.svg"
+        src="/backgrounds/primary-circle-fade.svg"
         alt="primary-circle"
       />
       <img
         className="hidden lg:block absolute top-0 right-0 mt-20 w-1/6"
-        src="/assets/backgrounds/secondary-circle-fade.svg"
+        src="/backgrounds/secondary-circle-fade.svg"
         alt="secondary-circle"
       />
       <div className="container px-4 mx-auto">

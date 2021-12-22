@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import { escapeInject } from 'vite-plugin-ssr';
 
-import logoUrl from '../assets/logo.svg';
 import Layout from '../layout/Layout';
 import { getPageDescription } from './getPageDescription';
 import { getPageTitle } from './getPageTitle';
@@ -29,7 +28,7 @@ function render(pageContext: PageContextBuiltIn & PageContext) {
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="${logoUrl}" />
+        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="${description}" />
         <title>${title}</title>
